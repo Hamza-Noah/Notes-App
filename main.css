@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 30px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form {
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form * {
+  width: 100%;
+}
+
+.input,
+.textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  flex: 1;
+}
+
+
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+}
+
+.add {
+  border: none;
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.notes-container {
+  background-color: #eee;
+  margin-top: 20px;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; 
+  column-gap: 1%;
+}
+
+.notes-container .note {
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  width: 22%;
+  margin-bottom: 20px;
+}
+
+.notes-container .note-title {
+  font-weight: bolder;
+  font-size: 1.25rem;
+}
+.notes-container .note-description {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 0 10px;
+  background-color: #eeeeee;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+
+.notes-container .note {
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+
+.notes-container .note:hover {
+  background-color: #f7f7f7;
+}
+
+.notes-container .note span {
+  font-weight: bold;
+  font-size: 14px;
+  background-color: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
